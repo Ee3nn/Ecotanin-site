@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecotanin - 高性能、低成本、零污染的皮革染色未来</title>
-    <!-- 引入Tailwind CSS -->
+    <title>Ecotanin - The Future of High-Performance Leather Dyeing</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 引入Inter字体 (专业、清晰) -->
+    <!-- Inter Font (Professional & Clean) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
-        /* * 品牌视觉规范 (Brand Visual Guidelines)
-         * 同步给负责人B和C
+        /* * Brand Visual Guidelines
+         * Synchronized for Team Members A, B, & C
          */
         :root {
-            --color-primary: #0A6045;   /* 深度生态绿 (Ecotanin Green) - 代表: 科技, 环保, 信任 */
-            --color-secondary: #8C5A2D; /* 沉稳皮革棕 (Tannin Brown) - 代表: 原料, 皮革, 稳重 */
-            --color-accent: #D4A76A;    /* 柔和品质金 (Quality Gold) - 代表: 高性能, 品质, CTA */
-            --color-dark: #1F2937;      /* 科技木炭灰 (Tech Charcoal) - 代表: 数据, 专业, 文本 */
-            --color-light-bg: #F9FAFB;  /* 浅灰背景 (Light Background) */
+            --color-primary: #0A6045;   /* Ecotanin Green: Trust, Ecology, Science */
+            --color-secondary: #8C5A2D; /* Tannin Brown: Raw Material, Leather, Stability */
+            --color-accent: #D4A76A;    /* Quality Gold: High-Performance, Premium, CTA */
+            --color-dark: #1F2937;      /* Tech Charcoal: Data, Professionalism, Text */
+            --color-light-bg: #F9FAFB;  /* Light Background */
         }
         
         body {
@@ -29,7 +29,7 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        /* 帮助Tailwind识别我们的品牌色 */
+        /* Tailwind Custom Colors */
         .bg-primary { background-color: var(--color-primary); }
         .text-primary { color: var(--color-primary); }
         .border-primary { border-color: var(--color-primary); }
@@ -46,22 +46,22 @@
 
         .bg-light-bg { background-color: var(--color-light-bg); }
 
-        /* 核心CTA按钮样式 (Call to Action) */
+        /* CTA Button Style */
         .cta-button {
             @apply inline-block bg-accent text-secondary font-bold py-3 px-8 rounded-lg shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
         }
 
-        /* 导航栏激活状态 */
+        /* Interactive Tabs */
         .data-tab.active {
             @apply border-primary text-primary font-semibold;
         }
 
-        /* 交互式图表的条形图 */
+        /* Chart Animation */
         .chart-bar {
             @apply w-2/5 md:w-1/3 rounded-t-lg transition-all duration-500 ease-out;
         }
         
-        /* 增加一个微妙的背景纹理，暗示“纤维” */
+        /* Subtle Texture */
         .subtle-texture {
             background-image: linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px),
                               linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px);
@@ -72,55 +72,53 @@
 <body class="bg-white text-dark">
 
     <!-- 
-      导航栏 (Header)
-      专业、清晰，并始终悬浮在顶部
+      Header / Navigation
+      Sticky & Professional
     -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- 
-              Logo: 融合了“单宁分子结构”（六边形）和“皮革”元素（内部曲线）
-            -->
-            <a href="#home" class="flex items-center gap-2" title="Ecotanin 首页">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center gap-2" title="Ecotanin Home">
                 <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <title>Ecotanin Logo</title>
-                    <!-- 六边形分子结构 -->
+                    <!-- Hexagon (Molecule) -->
                     <path d="M50 2.67949C52.8868 1.11815 56.1132 1.11815 59 2.67949L89.641 20.3205C92.5278 21.8819 94.641 24.7915 95.3029 28.0637L99.8029 48.0637C100.465 51.3359 99.641 54.7085 97.641 57.3205L77.641 84.6795C75.641 87.2915 72.5278 88.8819 69.641 89.6795L39 97.3205C36.1132 98.8819 32.8868 98.8819 30 97.3205L9.35898 84.6795C6.47218 83.1181 4.35898 80.2085 3.69705 76.9363L0.197054 56.9363C-0.464879 53.6641 0.358983 50.2915 2.35898 47.6795L22.359 20.3205C24.359 17.7085 27.4722 16.1181 30.359 15.3205L50 2.67949Z" fill="var(--color-primary)"/>
-                    <!-- 内部皮革形状 -->
+                    <!-- Leather Shield Shape -->
                     <path d="M25 70C28 50 40 42 50 45C60 48 72 50 75 70C72 90 60 92 50 89C40 86 28 90 25 70Z" fill="var(--color-accent)"/>
                     <path opacity="0.6" d="M30 68C33 55 42 50 50 52C58 54 68 55 70 68C68 80 60 82 50 80C42 78 33 80 30 68Z" fill="var(--color-secondary)"/>
                 </svg>
                 <span class="text-2xl font-extrabold text-primary">Ecotanin</span>
             </a>
             
-            <!-- 导航链接 (桌面) -->
+            <!-- Desktop Links -->
             <div class="hidden md:flex items-center space-x-6">
-                <a href="#home" class="text-gray-600 hover:text-primary transition duration-300">首页</a>
-                <a href="#technology" class="text-gray-600 hover:text-primary transition duration-300">核心技术</a>
-                <a href="#data" class="text-gray-600 hover:text-primary transition duration-300">性能数据</a>
-                <a href="#applications" class="text-gray-600 hover:text-primary transition duration-300">应用市场</a>
-                <a href="#contact" class="text-gray-600 hover:text-primary transition duration-300">联系我们</a>
+                <a href="#home" class="text-gray-600 hover:text-primary transition duration-300 font-medium">Home</a>
+                <a href="#technology" class="text-gray-600 hover:text-primary transition duration-300 font-medium">Technology</a>
+                <a href="#data" class="text-gray-600 hover:text-primary transition duration-300 font-medium">Our Data</a>
+                <a href="#applications" class="text-gray-600 hover:text-primary transition duration-300 font-medium">Applications</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition duration-300 font-medium">Contact Us</a>
             </div>
             
-            <!-- CTA按钮 (桌面) -->
+            <!-- CTA Button -->
             <a href="#contact" class="hidden md:inline-block bg-primary text-white font-semibold py-2 px-6 rounded-lg shadow-sm hover:bg-opacity-90 transition duration-300">
-                获取样品与报价
+                Get Samples
             </a>
             
-            <!-- 移动端菜单按钮 -->
+            <!-- Mobile Menu Button -->
             <button id="mobile-menu-btn" class="md:hidden text-dark">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
         
-        <!-- 移动端菜单 (默认隐藏) -->
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 border-t border-gray-200">
-            <a href="#home" class="block py-2 text-gray-600 hover:text-primary transition duration-300">首页</a>
-            <a href="#technology" class="block py-2 text-gray-600 hover:text-primary transition duration-300">核心技术</a>
-            <a href="#data" class="block py-2 text-gray-600 hover:text-primary transition duration-300">性能数据</a>
-            <a href="#applications" class="block py-2 text-gray-600 hover:text-primary transition duration-300">应用市场</a>
-            <a href="#contact" class="block py-2 text-gray-600 hover:text-primary transition duration-300">联系我们</a>
+            <a href="#home" class="block py-2 text-gray-600 hover:text-primary transition duration-300">Home</a>
+            <a href="#technology" class="block py-2 text-gray-600 hover:text-primary transition duration-300">Technology</a>
+            <a href="#data" class="block py-2 text-gray-600 hover:text-primary transition duration-300">Our Data</a>
+            <a href="#applications" class="block py-2 text-gray-600 hover:text-primary transition duration-300">Applications</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-primary transition duration-300">Contact Us</a>
             <a href="#contact" class="block w-full text-center bg-primary text-white font-semibold py-3 px-6 rounded-lg shadow-sm hover:bg-opacity-90 transition duration-300 mt-2">
-                获取样品与报价
+                Get Samples & Quote
             </a>
         </div>
     </header>
@@ -128,34 +126,33 @@
     <main>
 
         <!-- 
-          区域 1: 首页 (Home)
-          Slogan + 视频 (B2B的关键第一印象)
+          Section 1: Hero
+          Value Proposition + Video
         -->
         <section id="home" class="relative flex items-center justify-center min-h-[calc(100vh-80px)] bg-light-bg subtle-texture overflow-hidden">
             <div class="container mx-auto px-6 py-20 text-center">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-dark leading-tight mb-6">
-                    <span class="text-primary">Ecotanin:</span> 高性能、低成本、零污染的
-                    <br class="hidden md:block">
-                    皮革染色未来。
+                    <span class="text-primary">Ecotanin:</span> High Performance, Low Cost, <br class="hidden md:block">Zero Pollution.
                 </h1>
                 <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-10">
-                    我们利用植物单宁的力量，通过革命性的共价键合技术，为制革业提供前所未有的色彩稳定性、环保效益和成本优势。
+                    The future of leather dyeing is here. Harnessing the power of plant tannins with revolutionary covalent bonding technology.
                 </p>
                 <a href="#contact" class="cta-button">
-                    立即获取样品
+                    Request Product Samples
                 </a>
                 
-                <!-- 负责人B的最终版视频 (占位符) -->
+                <!-- Video Embed Placeholder (For Team Member B) -->
                 <div class="mt-16 max-w-4xl mx-auto">
                     <div class="aspect-w-16 aspect-h-9 bg-dark rounded-xl shadow-2xl overflow-hidden border-4 border-white">
-                        <!-- 这是一个占位符，采购经理会在这里看到视频 -->
-                        <!-- 提示：请负责人B将视频上传至Vimeo或Youtube，然后替换下方的img和div -->
-                        <div class="w-full h-full flex items-center justify-center relative">
-                            <img src="https://placehold.co/1280x720/1F2937/F9FAFB?text=Ecotanin+%E4%BA%A7%E5%93%81%E4%BB%8B%E7%BB%8D%E8%A7%86%E9%A2%91" alt="Ecotanin 产品介绍视频" class="w-full h-full object-cover" 
-                                 onerror="this.src='https://placehold.co/1280x720/1F2937/F9FAFB?text=Video+Loading+Error'">
-                            <!-- 模拟播放按钮，增加点击欲望 -->
-                            <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 transition-all duration-300 hover:bg-opacity-10">
-                                <svg class="w-20 h-20 text-white opacity-80" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        <div class="w-full h-full flex items-center justify-center relative bg-gray-800">
+                            <!-- Placeholder Image -->
+                            <img src="https://placehold.co/1280x720/1F2937/F9FAFB?text=Ecotanin+Product+Intro+Video" alt="Ecotanin Introduction Video" class="w-full h-full object-cover opacity-80" 
+                                 onerror="this.src='https://placehold.co/1280x720/1F2937/F9FAFB?text=Video+Loading...'">
+                            <!-- Play Button Overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110">
+                                <div class="bg-white bg-opacity-20 rounded-full p-4 backdrop-blur-sm border border-white border-opacity-40">
+                                    <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -164,95 +161,100 @@
         </section>
 
         <!-- 
-          区域 2: 核心技术 (Technology)
-          网站的灵魂：信息图 + 产品线
+          Section 2: Technology
+          Infographic + The 7 Extracts (Corrected List)
         -->
         <section id="technology" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <!-- 页面标题 -->
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-sm font-bold uppercase text-secondary tracking-wider">核心技术</h2>
-                    <h3 class="text-4xl md:text-5xl font-extrabold text-dark mt-2">
-                        源于自然的革命性“共价键合”
+                    <h2 class="text-sm font-bold uppercase text-secondary tracking-wider">Core Technology</h2>
+                    <h3 class="text-3xl md:text-5xl font-extrabold text-dark mt-2">
+                        Revolutionary "Covalent Bonding"
                     </h3>
                     <p class="text-lg text-gray-600 mt-4">
-                        传统染料仅通过物理吸附，易褪色且污染严重。Ecotanin通过化学反应，将天然单宁分子永久“锁”在皮革纤维上。
+                        Unlike traditional dyes that rely on weak physical adsorption, Ecotanin forms permanent chemical bonds with leather fibers.
                     </p>
                 </div>
 
-                <!-- 
-                  信息图 (Infographic)
-                  展示负责人C的“共价键合”化学机理
-                -->
-                <div class="max-w-5xl mx-auto grid md:grid-cols-3 items-center justify-center gap-8 md:gap-4 p-8 bg-light-bg rounded-xl shadow-lg">
-                    <!-- 1. 传统技术 (问题) -->
-                    <div class="flex-1 text-center p-6 bg-white rounded-lg shadow-md border border-gray-200">
-                        <svg class="w-16 h-16 mx-auto text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
-                        <h4 class="text-xl font-bold text-dark mt-4">传统染料 (物理吸附)</h4>
-                        <p class="text-gray-600 mt-2">染料分子仅“附着”在皮革表面，连接力弱。</p>
-                        <p class="font-semibold text-red-600 mt-2">弱点: 易脱落、易褪色、高污染</p>
+                <!-- Infographic: Mechanism -->
+                <div class="max-w-5xl mx-auto grid md:grid-cols-3 items-center justify-center gap-8 md:gap-4 p-8 bg-light-bg rounded-xl shadow-lg mb-20">
+                    <!-- Traditional -->
+                    <div class="flex-1 text-center p-6 bg-white rounded-lg shadow-md border border-gray-200 h-full flex flex-col justify-center">
+                        <svg class="w-16 h-16 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
+                        <h4 class="text-xl font-bold text-dark">Traditional Dyeing</h4>
+                        <p class="text-sm text-gray-500 mt-1">(Physical Adsorption)</p>
+                        <p class="text-gray-600 mt-2">Molecules merely "stick" to the surface.</p>
+                        <p class="font-bold text-red-600 mt-2 text-sm">Weakness: Fading, Leaching, Pollution</p>
                     </div>
 
-                    <!-- 箭头 (转变) -->
+                    <!-- Arrow -->
                     <div class="text-primary text-center">
-                        <svg class="w-12 h-12 md:w-20 md:h-20 mx-auto transform rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        <span class="text-sm font-semibold text-primary hidden md:block mt-2">技术革新</span>
+                        <svg class="w-12 h-12 md:w-20 md:h-20 mx-auto transform rotate-90 md:rotate-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="text-sm font-bold text-primary hidden md:block mt-2">THE INNOVATION</span>
                     </div>
 
-                    <!-- 2. Ecotanin 技术 (解决方案) -->
-                    <div class="flex-1 text-center p-6 bg-white rounded-lg shadow-md border-2 border-primary">
-                        <svg class="w-16 h-16 mx-auto text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                        <h4 class="text-xl font-bold text-primary mt-4">Ecotanin (共价键合)</h4>
-                        <p class="text-gray-600 mt-2">单宁分子与皮革纤维形成牢固的化学键。</p>
-                        <p class="font-semibold text-primary mt-2">优势: 永久锁色、超高色牢度、零污染</p>
+                    <!-- Ecotanin -->
+                    <div class="flex-1 text-center p-6 bg-white rounded-lg shadow-md border-2 border-primary h-full flex flex-col justify-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-2 py-1">NEW</div>
+                        <svg class="w-16 h-16 mx-auto text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        <h4 class="text-xl font-bold text-primary">Ecotanin Technology</h4>
+                        <p class="text-sm text-primary mt-1">(Covalent Bonding)</p>
+                        <p class="text-gray-600 mt-2">Permanently locked into fibers.</p>
+                        <p class="font-bold text-primary mt-2 text-sm">Result: Superior Fastness, Zero Runoff</p>
                     </div>
                 </div>
 
-                <!-- 7色产品线 -->
-                <div class="mt-20">
-                    <h3 class="text-3xl font-bold text-dark text-center mb-10">Ecotanin 天然产品线</h3>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6">
-                        <!-- 产品 1: Divi Divi -->
-                        <div class="text-center p-4 bg-white rounded-lg shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl hover:scale-105">
-                            <div class="w-full h-32 rounded-md" style="background-color: #8B4513;" title="经典棕"></div>
-                            <h5 class="text-lg font-bold mt-4">经典棕</h5>
-                            <p class="text-sm text-gray-500">原料: Divi Divi (荚豆)</p>
+                <!-- 7 Color Product Line (Based on Real Extracts) -->
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-dark text-center mb-10">Our Natural Extract Series</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                        <!-- 1. Quebracho -->
+                        <div class="group text-center p-3 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                            <div class="w-full h-24 rounded bg-[#8B4513] mb-3 group-hover:scale-105 transition-transform"></div>
+                            <h5 class="font-bold text-dark">Quebracho</h5>
+                            <p class="text-xs text-gray-500">Reddish Brown<br>(Wood Extract)</p>
                         </div>
-                        <!-- 产品 2: 没食子酸 -->
-                        <div class="text-center p-4 bg-white rounded-lg shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl hover:scale-105">
-                            <div class="w-full h-32 rounded-md" style="background-color: #4A2E2B;" title="乌木黑"></div>
-                            <h5 class="text-lg font-bold mt-4">乌木黑</h5>
-                            <p class="text-sm text-gray-500">原料: 没食子酸 (Gallic Acid)</p>
+                        
+                        <!-- 2. Mimosa -->
+                        <div class="group text-center p-3 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                            <div class="w-full h-24 rounded bg-[#D8BCAB] mb-3 group-hover:scale-105 transition-transform"></div>
+                            <h5 class="font-bold text-dark">Mimosa</h5>
+                            <p class="text-xs text-gray-500">Soft Beige<br>(Bark Extract)</p>
                         </div>
-                        <!-- 产品 3: 坚木 -->
-                        <div class="text-center p-4 bg-white rounded-lg shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl hover:scale-105">
-                            <div class="w-full h-32 rounded-md" style="background-color: #B8860B;" title="沙漠金"></div>
-                            <h5 class="text-lg font-bold mt-4">沙漠金</h5>
-                            <p class="text-sm text-gray-500">原料: 坚木 (Quebracho)</p>
+                        
+                        <!-- 3. Chestnut -->
+                        <div class="group text-center p-3 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                            <div class="w-full h-24 rounded bg-[#5D4037] mb-3 group-hover:scale-105 transition-transform"></div>
+                            <h5 class="font-bold text-dark">Chestnut</h5>
+                            <p class="text-xs text-gray-500">Dark Brown<br>(Wood Extract)</p>
                         </div>
-                        <!-- 产品 4: 儿茶 -->
-                        <div class="text-center p-4 bg-white rounded-lg shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl hover:scale-105">
-                            <div class="w-full h-32 rounded-md" style="background-color: #800000;" title="波尔多红"></div>
-                            <h5 class="text-lg font-bold mt-4">波尔多红</h5>
-                            <p class="text-sm text-gray-500">原料: 儿茶 (Catechu)</p>
+
+                        <!-- 4. Tara -->
+                        <div class="group text-center p-3 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                            <div class="w-full h-24 rounded bg-[#F5F5DC] border border-gray-200 mb-3 group-hover:scale-105 transition-transform"></div>
+                            <h5 class="font-bold text-dark">Tara</h5>
+                            <p class="text-xs text-gray-500">Light Cream<br>(Pod Extract)</p>
                         </div>
-                        <!-- 产品 5: 绿茶 -->
-                        <div class="text-center p-4 bg-white rounded-lg shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl hover:scale-105">
-                            <div class="w-full h-32 rounded-md" style="background-color: #556B2F;" title="橄榄绿"></div>
-                            <h5 class="text-lg font-bold mt-4">橄榄绿</h5>
-                            <p class="text-sm text-gray-500">原料: 绿茶提取物 (EGCG)</p>
+
+                        <!-- 5. Gambier -->
+                        <div class="group text-center p-3 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                            <div class="w-full h-24 rounded bg-[#CD853F] mb-3 group-hover:scale-105 transition-transform"></div>
+                            <h5 class="font-bold text-dark">Gambier</h5>
+                            <p class="text-xs text-gray-500">Golden Brown<br>(Leaf Extract)</p>
                         </div>
-                        <!-- 产品 6: 含羞草 -->
-                        <div class="text-center p-4 bg-white rounded-lg shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl hover:scale-105">
-                            <div class="w-full h-32 rounded-md" style="background-color: #D2B48C;" title="自然褐"></div>
-                            <h5 class="text-lg font-bold mt-4">自然褐</h5>
-                            <p class="text-sm text-gray-500">原料: 含羞草 (Mimosa)</p>
+                        
+                        <!-- 6. Myrobalan -->
+                        <div class="group text-center p-3 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                            <div class="w-full h-24 rounded bg-[#E4D00A] mb-3 group-hover:scale-105 transition-transform"></div>
+                            <h5 class="font-bold text-dark">Myrobalan</h5>
+                            <p class="text-xs text-gray-500">Yellow/Green<br>(Nut Extract)</p>
                         </div>
-                        <!-- 产品 7: 栗木 -->
-                        <div class="text-center p-4 bg-white rounded-lg shadow-md border border-gray-100 transition-all duration-300 hover:shadow-xl hover:scale-105">
-                            <div class="w-full h-32 rounded-md" style="background-color: #6B4423;" title="深栗"></div>
-                            <h5 class="text-lg font-bold mt-4">深栗</h5>
-                            <p class="text-sm text-gray-500">原料: 栗木 (Chestnut)</p>
+                        
+                        <!-- 7. Valonea -->
+                        <div class="group text-center p-3 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-lg transition-all">
+                            <div class="w-full h-24 rounded bg-[#708090] mb-3 group-hover:scale-105 transition-transform"></div>
+                            <h5 class="font-bold text-dark">Valonea</h5>
+                            <p class="text-xs text-gray-500">Slate Grey<br>(Acorn Extract)</p>
                         </div>
                     </div>
                 </div>
@@ -260,137 +262,133 @@
         </section>
 
         <!-- 
-          区域 3: 性能数据 (Our Data)
-          最有说服力的页面：交互式图表 + 数据表格
+          Section 3: Our Data
+          Interactive Charts & Tables
         -->
         <section id="data" class="py-24 bg-light-bg subtle-texture">
             <div class="container mx-auto px-6">
-                <!-- 页面标题 -->
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-sm font-bold uppercase text-secondary tracking-wider">性能数据</h2>
-                    <h3 class="text-4xl md:text-5xl font-extrabold text-dark mt-2">
-                        压倒性优势：数据是最好的语言
+                    <h2 class="text-sm font-bold uppercase text-secondary tracking-wider">Performance Data</h2>
+                    <h3 class="text-3xl md:text-5xl font-extrabold text-dark mt-2">
+                        Overwhelming Advantage
                     </h3>
                     <p class="text-lg text-gray-600 mt-4">
-                        采购经理最关心的就是数据。Ecotanin在所有关键耐久性指标上均显著优于传统染料。
+                        Data speaks louder than words. Ecotanin outperforms traditional dyes in every key durability metric.
                     </p>
                 </div>
 
-                <!-- 
-                  交互式图表 (重制图2)
-                  使用JS切换不同维度的数据
-                -->
-                <div class="max-w-5xl mx-auto bg-white p-6 md:p-8 rounded-xl shadow-xl">
-                    <h4 class="text-2xl font-bold text-dark text-center mb-8">Ecotanin vs 传统染料：耐久性对比</h4>
-                    <!-- 切换标签 -->
-                    <div class="flex flex-wrap justify-center border-b border-gray-200 mb-8 -mt-2">
-                        <button class="data-tab px-4 py-3 md:px-6 md:py-3 font-medium text-gray-500 border-b-2 border-transparent hover:text-dark active" data-dimension="sunlight">日光</button>
-                        <button class="data-tab px-4 py-3 md:px-6 md:py-3 font-medium text-gray-500 border-b-2 border-transparent hover:text-dark" data-dimension="uv">UV</button>
-                        <button class="data-tab px-4 py-3 md:px-6 md:py-3 font-medium text-gray-500 border-b-2 border-transparent hover:text-dark" data-dimension="temp">高温 (80°C)</button>
-                        <button class="data-tab px-4 py-3 md:px-6 md:py-3 font-medium text-gray-500 border-b-2 border-transparent hover:text-dark" data-dimension="humidity">湿度 (95% RH)</button>
+                <!-- Interactive Chart -->
+                <div class="max-w-5xl mx-auto bg-white p-6 md:p-8 rounded-xl shadow-xl border border-gray-100">
+                    <h4 class="text-2xl font-bold text-dark text-center mb-8">Ecotanin vs. Traditional Dyes</h4>
+                    
+                    <!-- Tabs -->
+                    <div class="flex flex-wrap justify-center border-b border-gray-200 mb-8 gap-2">
+                        <button class="data-tab px-4 py-3 font-medium text-gray-500 border-b-2 border-transparent hover:text-dark transition-colors active" data-dimension="sunlight">Sunlight Resistance</button>
+                        <button class="data-tab px-4 py-3 font-medium text-gray-500 border-b-2 border-transparent hover:text-dark transition-colors" data-dimension="uv">UV Resistance</button>
+                        <button class="data-tab px-4 py-3 font-medium text-gray-500 border-b-2 border-transparent hover:text-dark transition-colors" data-dimension="temp">Heat (80°C)</button>
+                        <button class="data-tab px-4 py-3 font-medium text-gray-500 border-b-2 border-transparent hover:text-dark transition-colors" data-dimension="humidity">Humidity (95%)</button>
                     </div>
 
-                    <!-- 图表容器 -->
-                    <div class="relative h-[300px] md:h-[400px] mt-10 mb-12">
-                        <!-- X 轴 -->
-                        <div class="absolute bottom-0 left-0 w-full h-1 bg-gray-200 rounded-full"></div>
+                    <!-- Chart Area -->
+                    <div class="relative h-[350px] md:h-[400px] mt-8 mb-4">
+                        <!-- Axis Line -->
+                        <div class="absolute bottom-0 left-0 w-full h-px bg-gray-300"></div>
                         
-                        <!-- 图表内容 -->
-                        <div class="absolute w-full bottom-0 flex justify-around items-end px-4" style="height: 100%;">
-                            <!-- 传统染料 Bar -->
-                            <div class="text-center w-1/3">
-                                <span id="trad-label" class="text-sm md:text-lg font-bold text-red-600"></span>
-                                <div id="trad-bar" class="chart-bar bg-gray-300 mx-auto" title="传统染料"></div>
-                                <span class="text-xs md:text-base font-semibold text-gray-600 mt-2 block">传统染料</span>
+                        <!-- Bars Container -->
+                        <div class="absolute w-full bottom-0 flex justify-around items-end px-4 h-full pb-px">
+                            <!-- Traditional Bar -->
+                            <div class="text-center w-1/3 flex flex-col justify-end h-full">
+                                <div class="mb-2">
+                                    <span id="trad-label" class="text-lg md:text-xl font-bold text-red-600 block"></span>
+                                    <span class="text-xs text-gray-400 font-medium">Poor Stability</span>
+                                </div>
+                                <div id="trad-bar" class="chart-bar bg-gray-300 mx-auto w-16 md:w-24 rounded-t-md shadow-inner" style="height: 50%;"></div>
+                                <span class="text-sm font-bold text-gray-500 mt-3 block uppercase tracking-wide">Traditional</span>
                             </div>
                             
                             <!-- Ecotanin Bar -->
-                            <div class="text-center w-1/3">
-                                <span id="eco-label" class="text-sm md:text-lg font-bold text-primary"></span>
-                                <div id="eco-bar" class="chart-bar bg-primary mx-auto" title="Ecotanin"></div>
-                                <span class="text-xs md:text-base font-semibold text-primary mt-2 block">Ecotanin</span>
+                            <div class="text-center w-1/3 flex flex-col justify-end h-full">
+                                <div class="mb-2">
+                                    <span id="eco-label" class="text-lg md:text-xl font-bold text-primary block"></span>
+                                    <span class="text-xs text-primary font-medium opacity-80">Excellent Stability</span>
+                                </div>
+                                <div id="eco-bar" class="chart-bar bg-primary mx-auto w-16 md:w-24 rounded-t-md shadow-lg" style="height: 90%;"></div>
+                                <span class="text-sm font-bold text-primary mt-3 block uppercase tracking-wide">Ecotanin</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 
-                  色牢度报告 (表3 和 表4)
-                  在移动端可横向滚动
-                -->
+                <!-- Technical Tables (ISO Standards) -->
                 <div class="grid md:grid-cols-2 gap-8 md:gap-12 mt-16">
-                    <!-- 表3: 灰度等级表 -->
-                    <div class="bg-white p-6 rounded-xl shadow-xl">
-                        <h4 class="text-2xl font-bold text-dark mb-4">色牢度测试 (灰度等级)</h4>
-                        <p class="text-gray-600 mb-6">基于 ISO 105-A02 标准。等级越高 (最高5级)，性能越好。</p>
+                    <!-- Table 3: Grey Scale -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="text-xl font-bold text-dark">Color Fastness (Grey Scale)</h4>
+                            <span class="text-xs font-mono bg-gray-100 px-2 py-1 rounded text-gray-500">ISO 105-A02</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-6">Scale 1-5 (5 = Best/No Change)</p>
                         <div class="overflow-x-auto">
                             <table class="min-w-full divide-y divide-gray-200">
-                                <thead class="bg-gray-100">
+                                <thead class="bg-gray-50">
                                     <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">测试项目</th>
-                                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">传统染料</th>
-                                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Ecotanin</th>
+                                        <th class="px-4 py-3 text-left text-xs font-bold text-gray-500 uppercase">Test Item</th>
+                                        <th class="px-4 py-3 text-center text-xs font-bold text-gray-500 uppercase">Traditional</th>
+                                        <th class="px-4 py-3 text-center text-xs font-bold text-primary uppercase">Ecotanin</th>
                                     </tr>
                                 </thead>
-                                <tbody class="bg-white divide-y divide-gray-200">
+                                <tbody class="bg-white divide-y divide-gray-100 text-sm">
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-dark">耐摩擦 (干)</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center text-gray-600">3-4 级</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center font-bold text-primary">4-5 级</td>
+                                        <td class="px-4 py-3 font-medium text-dark">Rubbing (Dry)</td>
+                                        <td class="px-4 py-3 text-center text-gray-500">3-4</td>
+                                        <td class="px-4 py-3 text-center font-bold text-primary">4-5</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-dark">耐摩擦 (湿)</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center text-red-600">2-3 级</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center font-bold text-primary">4 级</td>
+                                        <td class="px-4 py-3 font-medium text-dark">Rubbing (Wet)</td>
+                                        <td class="px-4 py-3 text-center text-red-500">2-3</td>
+                                        <td class="px-4 py-3 text-center font-bold text-primary">4</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-dark">耐汗渍 (酸/碱)</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center text-red-600">3 级</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center font-bold text-primary">4-5 级</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-dark">耐水洗</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center text-red-600">2-3 级</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center font-bold text-primary">4-5 级</td>
+                                        <td class="px-4 py-3 font-medium text-dark">Perspiration</td>
+                                        <td class="px-4 py-3 text-center text-red-500">3</td>
+                                        <td class="px-4 py-3 text-center font-bold text-primary">4-5</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                     
-                    <!-- 表4: ΔE (色差) 数据 -->
-                    <div class="bg-white p-6 rounded-xl shadow-xl">
-                        <h4 class="text-2xl font-bold text-dark mb-4">耐久性测试 (ΔE 色差)</h4>
-                        <p class="text-gray-600 mb-6">&Delta;E 值越低，代表颜色变化越小，性能越好。</p>
+                    <!-- Table 4: Delta E -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl border border-gray-100">
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="text-xl font-bold text-dark">Durability Tests (ΔE)</h4>
+                            <span class="text-xs font-mono bg-gray-100 px-2 py-1 rounded text-gray-500">CIELAB</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-6">Lower ΔE = Better Color Stability</p>
                         <div class="overflow-x-auto">
                             <table class="min-w-full divide-y divide-gray-200">
-                                <thead class="bg-gray-100">
+                                <thead class="bg-gray-50">
                                     <tr>
-                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">测试项目</th>
-                                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">传统染料 (ΔE)</th>
-                                        <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Ecotanin (ΔE)</th>
+                                        <th class="px-4 py-3 text-left text-xs font-bold text-gray-500 uppercase">Condition</th>
+                                        <th class="px-4 py-3 text-center text-xs font-bold text-gray-500 uppercase">Traditional (ΔE)</th>
+                                        <th class="px-4 py-3 text-center text-xs font-bold text-primary uppercase">Ecotanin (ΔE)</th>
                                     </tr>
                                 </thead>
-                                <tbody class="bg-white divide-y divide-gray-200">
+                                <tbody class="bg-white divide-y divide-gray-100 text-sm">
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-dark">耐光照 (48h)</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center text-red-600 font-semibold">15.2</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center font-bold text-primary">1.8</td>
+                                        <td class="px-4 py-3 font-medium text-dark">Sunlight (48h)</td>
+                                        <td class="px-4 py-3 text-center text-red-500 font-semibold">15.2</td>
+                                        <td class="px-4 py-3 text-center font-bold text-primary">1.8</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-dark">耐UV (24h)</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center text-red-600 font-semibold">18.5</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center font-bold text-primary">2.1</td>
+                                        <td class="px-4 py-3 font-medium text-dark">UV Radiation (24h)</td>
+                                        <td class="px-4 py-3 text-center text-red-500 font-semibold">18.5</td>
+                                        <td class="px-4 py-3 text-center font-bold text-primary">2.1</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-dark">耐高温 (80°C, 24h)</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center text-red-600 font-semibold">12.5</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center font-bold text-primary">1.2</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-dark">耐湿度 (95% RH, 24h)</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center text-red-600 font-semibold">9.8</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-center font-bold text-primary">0.9</td>
+                                        <td class="px-4 py-3 font-medium text-dark">Heat (80°C)</td>
+                                        <td class="px-4 py-3 text-center text-red-500 font-semibold">12.5</td>
+                                        <td class="px-4 py-3 text-center font-bold text-primary">1.2</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -401,78 +399,72 @@
         </section>
         
         <!-- 
-          区域 4: 应用市场 (Applications)
-          面向客户的页面，解决他们的痛点
+          Section 4: Applications
+          Solving Customer Pain Points
         -->
         <section id="applications" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <!-- 页面标题 -->
                 <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-sm font-bold uppercase text-secondary tracking-wider">应用市场</h2>
-                    <h3 class="text-4xl md:text-5xl font-extrabold text-dark mt-2">
-                        为您的行业提供卓越价值
+                    <h2 class="text-sm font-bold uppercase text-secondary tracking-wider">Applications</h2>
+                    <h3 class="text-3xl md:text-5xl font-extrabold text-dark mt-2">
+                        Tailored for Industry Needs
                     </h3>
-                    <p class="text-lg text-gray-600 mt-4">
-                        无论您的产品是什么，Ecotanin 都能提供完美契合的性能与成本优势。
-                    </p>
                 </div>
                 
                 <div class="grid md:grid-cols-3 gap-8">
-                    <!-- 应用 1: 汽车内饰 -->
-                    <div class="bg-light-bg rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/334155/F9FAFB?text=汽车内饰" alt="汽车内饰" class="w-full h-48 object-cover"
-                             onerror="this.src='https://placehold.co/600x400/334155/F9FAFB?text=Image+Not+Found'">
+                    <!-- Automotive -->
+                    <div class="group bg-light-bg rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                        <div class="h-48 bg-gray-800 relative overflow-hidden">
+                             <!-- Image Fallback included -->
+                             <img src="https://placehold.co/600x400/334155/F9FAFB?text=Automotive+Interiors" alt="Automotive Interiors" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        </div>
                         <div class="p-8">
-                            <h4 class="text-2xl font-bold text-dark mb-4">汽车内饰</h4>
-                            <p class="text-gray-600 mb-4">解决汽车座椅和内饰在长期日晒下的褪色和老化问题。</p>
-                            <ul class="space-y-2">
+                            <h4 class="text-xl font-bold text-dark mb-3">Automotive Interiors</h4>
+                            <p class="text-sm text-gray-600 mb-4">Solves fading and aging of dashboard leather under intense sunlight.</p>
+                            <ul class="space-y-2 text-sm">
                                 <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                    <span class="font-semibold text-dark">优异的耐UV和耐热性</span>
+                                    <span class="text-green-500">✔</span> <span class="font-semibold text-gray-700">Superior UV Resistance</span>
                                 </li>
                                 <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                    <span class="font-semibold text-dark">超高耐摩擦色牢度</span>
+                                    <span class="text-green-500">✔</span> <span class="font-semibold text-gray-700">High Heat Stability</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     
-                    <!-- 应用 2: 家具制造 -->
-                    <div class="bg-light-bg rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/8C5A2D/F9FAFB?text=高端家具" alt="高端家具" class="w-full h-48 object-cover"
-                             onerror="this.src='https://placehold.co/600x400/8C5A2D/F9FAFB?text=Image+Not+Found'">
+                    <!-- Furniture -->
+                    <div class="group bg-light-bg rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                        <div class="h-48 bg-gray-800 relative overflow-hidden">
+                             <img src="https://placehold.co/600x400/8C5A2D/F9FAFB?text=Premium+Furniture" alt="Premium Furniture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        </div>
                         <div class="p-8">
-                            <h4 class="text-2xl font-bold text-dark mb-4">家具制造</h4>
-                            <p class="text-gray-600 mb-4">保证高端皮革沙发和座椅在日常使用和窗边光照下长久如新。</p>
-                            <ul class="space-y-2">
+                            <h4 class="text-xl font-bold text-dark mb-3">Luxury Furniture</h4>
+                            <p class="text-sm text-gray-600 mb-4">Ensures leather sofas remain pristine even near windows or in daily use.</p>
+                            <ul class="space-y-2 text-sm">
                                 <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                    <span class="font-semibold text-dark">顶级耐光照性能</span>
+                                    <span class="text-green-500">✔</span> <span class="font-semibold text-gray-700">Excellent Light Fastness</span>
                                 </li>
                                 <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                    <span class="font-semibold text-dark">耐汗渍和水渍</span>
+                                    <span class="text-green-500">✔</span> <span class="font-semibold text-gray-700">Sweat & Water Resistant</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     
-                    <!-- 应用 3: 制革工业 -->
-                    <div class="bg-light-bg rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
-                        <img src="https://placehold.co/600x400/0A6045/F9FAFB?text=绿色制革" alt="绿色制革" class="w-full h-48 object-cover"
-                             onerror="this.src='https://placehold.co/600x400/0A6045/F9FAFB?text=Image+Not+Found'">
+                    <!-- Tanning Industry -->
+                    <div class="group bg-light-bg rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                        <div class="h-48 bg-gray-800 relative overflow-hidden">
+                             <img src="https://placehold.co/600x400/0A6045/F9FAFB?text=Green+Tanning" alt="Green Tanning Process" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        </div>
                         <div class="p-8">
-                            <h4 class="text-2xl font-bold text-dark mb-4">制革工业</h4>
-                            <p class="text-gray-600 mb-4">帮助制革厂应对严苛的环保法规，同时显著降低生产和废水处理成本。</p>
-                            <ul class="space-y-2">
+                            <h4 class="text-xl font-bold text-dark mb-3">Tanning Industry</h4>
+                            <p class="text-sm text-gray-600 mb-4">Meet strict environmental regulations while lowering production costs.</p>
+                            <ul class="space-y-2 text-sm">
                                 <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                    <span class="font-semibold text-dark">环保性 (零污染, 100% 生物基)</span>
+                                    <span class="text-green-500">✔</span> <span class="font-semibold text-gray-700">100% Bio-based & Zero Pollution</span>
                                 </li>
                                 <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                    <span class="font-semibold text-dark">惊人的成本优势 (降低废水处理费)</span>
+                                    <span class="text-green-500">✔</span> <span class="font-semibold text-gray-700">Reduced Wastewater Costs</span>
                                 </li>
                             </ul>
                         </div>
@@ -482,114 +474,98 @@
         </section>
 
         <!-- 
-          区域 5: 联系我们 (Contact)
-          最终的转化漏斗 (Lead Generation)
+          Section 5: Contact
+          Lead Generation Form
         -->
         <section id="contact" class="py-24 bg-dark">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto">
                     <h2 class="text-4xl md:text-5xl font-extrabold text-white">
-                        获取Ecotanin样品与报价
+                        Get Samples & Pricing
                     </h2>
                     <p class="text-lg text-gray-300 mt-4">
-                        立即联系我们，我们的皮革专家将为您寄送样品，并提供定制化的成本分析报告。
+                        Contact us today for a customized cost-analysis report and product samples.
                     </p>
                 </div>
                 
-                <!-- 联系表单 -->
-                <!-- 提示: 为使其正常工作, 'action' 属性需要指向一个后端处理程序或第三方服务 (如 Formspree) -->
-                <form class="max-w-2xl mx-auto mt-12 space-y-6" action="#" method="POST" onsubmit="handleFormSubmit(event)">
+                <!-- Contact Form -->
+                <form class="max-w-2xl mx-auto mt-12 space-y-6" onsubmit="handleFormSubmit(event)">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
-                            <label for="company" class="block text-sm font-medium text-gray-200">公司名称 *</label>
-                            <input type="text" id="company" name="company" required class="mt-1 block w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+                            <label for="company" class="block text-sm font-medium text-gray-300 mb-1">Company Name *</label>
+                            <input type="text" id="company" required class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="e.g., Global Leathers Ltd.">
                         </div>
                         <div>
-                            <label for="name" class="block text-sm font-medium text-gray-200">您的姓名 *</label>
-                            <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+                            <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Contact Name *</label>
+                            <input type="text" id="name" required class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="John Doe">
                         </div>
                     </div>
                     <div>
-                        <label for="email" class="block text-sm font-medium text-gray-200">工作邮箱 *</label>
-                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Work Email *</label>
+                        <input type="email" id="email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="john@company.com">
                     </div>
                     <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-200">联系电话</label>
-                        <input type="tel" id="phone" name="phone" class="mt-1 block w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent">
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Requirements / Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all" placeholder="We are looking for high-fastness brown dyes for automotive upholstery..."></textarea>
                     </div>
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-200">您的需求 (如: 产品应用、所需颜色)</label>
-                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" id="submit-btn" class="cta-button w-full md:w-auto">
-                            立即提交，获取样品
+                    <div class="text-center pt-4">
+                        <button type="submit" id="submit-btn" class="cta-button w-full md:w-auto hover:text-white border-2 border-transparent hover:border-accent">
+                            Submit Request
                         </button>
                     </div>
                 </form>
-                <!-- 表单提交后的提示消息 -->
-                <div id="form-success" class="hidden max-w-2xl mx-auto mt-6 p-4 bg-green-100 border border-green-300 text-green-800 rounded-lg text-center">
-                    感谢您的垂询！我们的团队将很快与您联系。
+                
+                <!-- Success Message -->
+                <div id="form-success" class="hidden max-w-2xl mx-auto mt-6 p-4 bg-primary bg-opacity-20 border border-primary text-green-300 rounded-lg text-center">
+                    <p class="font-bold">Thank you!</p>
+                    <p class="text-sm">Our sales team will contact you shortly with the requested information.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- 
-      页脚 (Footer)
-    -->
+    <!-- Footer -->
     <footer class="bg-gray-100 border-t border-gray-200">
         <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
-            <div class="flex items-center gap-2">
-                <!-- 页脚小Logo -->
-                <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 2.67949C52.8868 1.11815 56.1132 1.11815 59 2.67949L89.641 20.3205C92.5278 21.8819 94.641 24.7915 95.3029 28.0637L99.8029 48.0637C100.465 51.3359 99.641 54.7085 97.641 57.3205L77.641 84.6795C75.641 87.2915 72.5278 88.8819 69.641 89.6795L39 97.3205C36.1132 98.8819 32.8868 98.8819 30 97.3205L9.35898 84.6795C6.47218 83.1181 4.35898 80.2085 3.69705 76.9363L0.197054 56.9363C-0.464879 53.6641 0.358983 50.2915 2.35898 47.6795L22.359 20.3205C24.359 17.7085 27.4722 16.1181 30.359 15.3205L50 2.67949Z" fill="var(--color-primary)"/>
-                    <path d="M25 70C28 50 40 42 50 45C60 48 72 50 75 70C72 90 60 92 50 89C40 86 28 90 25 70Z" fill="var(--color-accent)"/>
-                </svg>
-                <span class="text-lg font-bold text-primary">Ecotanin</span>
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <span class="text-xl font-extrabold text-primary">Ecotanin</span>
             </div>
-            <p class="text-gray-500 text-sm mt-4 md:mt-0">
-                © 2025 Ecotanin. All Rights Reserved. 致力于可持续的皮革染色未来。
+            <p class="text-gray-500 text-sm">
+                © 2025 Ecotanin. All Rights Reserved. Sustainable Leather Solutions.
             </p>
-            <div class="flex space-x-4 mt-4 md:mt-0">
-                <a href="#" class="text-gray-500 hover:text-primary text-sm">隐私政策</a>
-                <a href="#" class="text-gray-500 hover:text-primary text-sm">服务条款</a>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-500 hover:text-primary text-sm transition-colors">Terms of Service</a>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript Logic -->
     <script>
-        // ------------------------------------
-        // 1. 移动端菜单切换 (Mobile Menu Toggle)
-        // ------------------------------------
+        // 1. Mobile Menu Toggle
         const menuBtn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
 
-        // ------------------------------------
-        // 2. 交互式图表逻辑 (Interactive Chart Logic)
-        // ------------------------------------
-        
-        // 采购经理关心的数据
+        // 2. Interactive Chart Logic
         const chartData = {
-            // key 必须匹配 data-tab 按钮上的 data-dimension 属性
             sunlight: {
-                tradValue: '褪色 45% (ΔE: 15.2)', tradHeight: '55%',
-                ecoValue: '仅褪色 5% (ΔE: 1.8)', ecoHeight: '95%'
+                tradValue: 'Fading 45% (ΔE: 15.2)', tradHeight: '45%',
+                ecoValue: 'Fading 5% (ΔE: 1.8)', ecoHeight: '95%'
             },
             uv: {
-                tradValue: '褪色 60% (ΔE: 18.5)', tradHeight: '40%',
-                ecoValue: '仅褪色 8% (ΔE: 2.1)', ecoHeight: '92%'
+                tradValue: 'Fading 60% (ΔE: 18.5)', tradHeight: '30%',
+                ecoValue: 'Fading 8% (ΔE: 2.1)', ecoHeight: '92%'
             },
             temp: {
-                tradValue: '严重色变 (ΔE: 12.5)', tradHeight: '60%',
-                ecoValue: '几乎无变化 (ΔE: 1.2)', ecoHeight: '98%'
+                tradValue: 'Discoloration (ΔE: 12.5)', tradHeight: '50%',
+                ecoValue: 'Stable (ΔE: 1.2)', ecoHeight: '98%'
             },
             humidity: {
-                tradValue: '明显色变 (ΔE: 9.8)', tradHeight: '65%',
-                ecoValue: '几乎无变化 (ΔE: 0.9)', ecoHeight: '99%'
+                tradValue: 'Discoloration (ΔE: 9.8)', tradHeight: '60%',
+                ecoValue: 'Stable (ΔE: 0.9)', ecoHeight: '99%'
             }
         };
 
@@ -602,82 +578,60 @@
         function updateChart(dimension) {
             const data = chartData[dimension];
             
-            // 更新图表
+            // Animate Heights
             tradBar.style.height = data.tradHeight;
             ecoBar.style.height = data.ecoHeight;
             
-            // 更新标签文本
-            tradLabel.innerHTML = data.tradValue;
-            ecoLabel.innerHTML = data.ecoValue;
+            // Update Text
+            tradLabel.innerText = data.tradValue;
+            ecoLabel.innerText = data.ecoValue;
         }
 
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
-                // 1. 移除所有标签的 'active' 状态
+                // Remove active class
                 tabs.forEach(t => t.classList.remove('active', 'border-primary', 'text-primary', 'font-semibold'));
-                
-                // 2. 激活被点击的标签
+                // Add active class
                 tab.classList.add('active', 'border-primary', 'text-primary', 'font-semibold');
-                
-                // 3. 更新图表
-                const dimension = tab.dataset.dimension;
-                updateChart(dimension);
+                // Update
+                updateChart(tab.dataset.dimension);
             });
         });
 
-        // 默认加载第一个图表的数据
+        // Initialize
         document.addEventListener('DOMContentLoaded', () => {
             updateChart('sunlight');
         });
 
-        // ------------------------------------
-        // 3. 表单提交处理 (Form Submission)
-        // ------------------------------------
-        function handleFormSubmit(event) {
-            event.preventDefault(); // 阻止表单默认提交
-            
-            // 在实际应用中, 你会在这里用 fetch() 发送数据到后端
-            
-            // 模拟提交成功
-            const submitBtn = document.getElementById('submit-btn');
-            const successMsg = document.getElementById('form-success');
-            
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '正在提交...';
-            
+        // 3. Form Handling (Simulation)
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+            const success = document.getElementById('form-success');
+            const form = e.target;
+
+            btn.innerHTML = 'Sending...';
+            btn.disabled = true;
+            btn.classList.add('opacity-50', 'cursor-not-allowed');
+
             setTimeout(() => {
-                // 隐藏表单, 显示成功消息
-                const form = event.target;
                 form.classList.add('hidden');
-                successMsg.classList.remove('hidden');
-            }, 1000); // 模拟网络延迟
+                success.classList.remove('hidden');
+            }, 1500);
         }
 
-        // ------------------------------------
-        // 4. 导航链接平滑滚动 (Smooth Scroll for Nav)
-        // ------------------------------------
+        // 4. Smooth Scroll for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    // 如果是移动端菜单，点击后先关闭菜单
-                    if (!menu.classList.contains('hidden')) {
-                        menu.classList.add('hidden');
-                    }
-                    
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    if (!menu.classList.contains('hidden')) menu.classList.add('hidden'); // Close mobile menu
+                    target.scrollIntoView({ behavior: 'smooth' });
                 }
             });
         });
-
     </script>
-
 </body>
 </html>
 
